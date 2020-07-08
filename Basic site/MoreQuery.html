@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Web Dev</title>
+    <script src="hello.js"></script>
+    <link href="my.css" rel="stylesheet" type="text/css" />
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"
+        integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30=" crossorigin="anonymous"></script>
+
+    <link href="https://code.jquery.com/ui/1.12.1/themes/ui-darkness/jquery-ui.css" rel="stylesheet" />
+</head>
+
+<body>
+    <script>
+        
+        $(document).ready(function () {
+             $("button").click(function () {
+                //  $("#one").fadeIn();
+                //  $("#two").fadeIn("slow");
+                //  $("#three").fadeIn(3000);
+
+                $("#one").slideDown("slow");
+             });
+            
+
+        });
+    </script>
+
+  <!-- <div class="TheClass">
+      <img id="one" src="./Pic/Ball.jpg">
+      <img id="two" src="./Pic/noface.png">
+      <img id="three" src="./Pic/Dog.jpg">
+  </div> -->
+
+  <button>PRESS</button>
+  <!-- <div class="TheClass">
+    <div id="one" style="width:2200; height:60px; display:none; background-color:orange;"></div><br>
+    <div id="two" style="width:2200; height:60px; display:none; background-color:rgb(255, 255, 255);"></div><br>
+    <div id="three" style="width:2200; height:60px; display:none; background-color:rgb(0, 255, 55);"></div><br>
+
+</div> -->
+
+<div id="one" style="width:90px; height:60px;display:none; background-color:rgb(255, 30, 0);"></div><br>
+
+
+</body>
+</html>

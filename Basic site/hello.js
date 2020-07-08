@@ -1,10 +1,8 @@
 console.log('Hello');
-
 //var
 // The var statement declares a 
 // function-scoped or globally-scoped variable, 
 // optionally initializing it to a value.
-
 
 // Comment out crtl + k + c
 
