@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Web Dev</title>
     <script src="hello.js"></script>
@@ -16,36 +17,72 @@
 
 <body>
     <script>
-        
+
         $(document).ready(function () {
-             $("button").click(function () {
+            $("button").click(function () {
                 //  $("#one").fadeIn();
                 //  $("#two").fadeIn("slow");
                 //  $("#three").fadeIn(3000);
 
                 $("#one").slideDown("slow");
-             });
-            
+            });
+
 
         });
     </script>
 
-  <!-- <div class="TheClass">
+    <!-- <div class="TheClass">
       <img id="one" src="./Pic/Ball.jpg">
       <img id="two" src="./Pic/noface.png">
       <img id="three" src="./Pic/Dog.jpg">
   </div> -->
 
-  <button>PRESS</button>
-  <!-- <div class="TheClass">
+    <button>PRESS</button>
+    <!-- <div class="TheClass">
     <div id="one" style="width:2200; height:60px; display:none; background-color:orange;"></div><br>
     <div id="two" style="width:2200; height:60px; display:none; background-color:rgb(255, 255, 255);"></div><br>
     <div id="three" style="width:2200; height:60px; display:none; background-color:rgb(0, 255, 55);"></div><br>
 
 </div> -->
 
-<div id="one" style="width:90px; height:60px;display:none; background-color:rgb(255, 30, 0);"></div><br>
+    <div id="one" style="width:90px; height:60px;display:none; background-color:rgb(255, 30, 0);"></div><br>
 
+    <h1>Query UI</h1>
+
+    <img id=img1 src="./Pic/Cat.jpg">
+    <input id="date" type="text" size="10">
+    <style>
+        /* the .drag is refereing to class the #drag is identifier  */
+        #drag {
+            width: 150px;
+            height: 60px;
+            background-color: blueviolet;
+        }
+        #drop {
+            width: 400px;
+            height: 400px;
+            float: right;
+            background-color: rgb(43, 61, 226);
+        }
+    </style>
+    <script>
+        $("#date").datepicker();// in built widget
+        //  shorthand for document.ready dont need to type up full statement   
+        $(function () {
+            $("#drag").draggable();
+            $("#img1").draggable();
+            $("#drop").droppable();
+
+        });
+    </script>
+    <div id="drag">
+        <p>drag me around</p>
+    </div>
+
+    <div id="drop">
+        <p>drop me off home </p>
+    </div>
 
 </body>
+
 </html>
