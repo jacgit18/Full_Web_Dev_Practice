@@ -1,35 +1,51 @@
 console.log('Hello');
-//var
-// The var statement declares a 
-// function-scoped or globally-scoped variable, 
-// optionally initializing it to a value.
+// javascroptt jas 3 ways to make
+// a vairiable const, let, and var
+// var is the orignal then const and
+// let came out let isnt really used
+// in mobile browsers may change
 
-// Comment out crtl + k + c
+// The var statement declares is scoped to current
+// execution context meaning there scoped to there
+// enclosing function like if you had a function with a 
+// fot loop containing var it would scoped to the function 
+// not just the for loop block but is limited to function
+// otherwise it,s global. it can be reasign whenever 
+// and intialized with or without value and can be 
+// redeclared at any point
 
-let age = 22; // javascript vairiable
+// var redeclare this cant be done with others
+var x = 1;
+var x = "bdbnd3";
+
+
+let age = 22; 
 // if age wasnt equal to anything it would be consisdered
 // undifined because nothing would be intiallized 
-// if value was null then it would explicitly clear the 
-// variable value
+// if value was null then the variable value is
+//  explicitly clear  
 
 // let allows you to declare variables that are limited 
-// to the scope of a block statement, or expression on
-// which it is used, unlike the var keyword, which 
-// defines a variable globally, or locally to an 
-// entire function regardless of block scope. 
-// The other difference between var and let is
-// that the latter is initialized to a value
-// only when a parser evaluates it (see below).
+// to the scope of a block statement like a for loop or 
+// if statement if you try to print let i outside the 
+// scope it will be undefined same for const,
+//  unlike var , which defines a variable globally, 
+// or locally to an entire function regardless of 
+// block scope. let also can be reassigned but cannot
+// be redeclared in the same scope
 
-// Just like const the let does not create properties 
-// of the window object when declared
-// globally (in the top-most scope).
 
 console.log(age);
 
 const birthday = '01/16/2020'; 
-//birthday = '01/16/2019'; // wont change
-// fixed value vairiable like final datatype varname in java
+// birthday = '01/16/2019'; // wont change
+// fixed value vairiable like final datatype varname 
+// in java also const isnt immutable(unchanging over time)
+// but the variable references cannot be change in memory
+// and must be initialized with a value. besides that it is 
+// blocked scoped, isnt global, and cannot be redeclared
+// in same scope like let also let and const arent in the 
+// window object
 console.log(birthday);
 
 let ary = [];
