@@ -232,7 +232,7 @@ footer a{
         display: block;
         height: 40px;
         width: 100%;
-        background: url(images/images.jpeg) no-repeat 98% center;
+        background: url(images/icons8-menu.svg) no-repeat 98% center;
         background-color: #fdf9fd;
         cursor: pointer;
     }
