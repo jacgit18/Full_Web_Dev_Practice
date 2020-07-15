@@ -93,8 +93,8 @@ function product(a,b){
 }
 console.log(product(12,4));
 // or
-let x = product(432,2);
-console.log(x);
+let y = product(432,2);
+console.log(y);
 
 let newray=[];
 newray=['1','2','1','2','3','2','3','1'];
