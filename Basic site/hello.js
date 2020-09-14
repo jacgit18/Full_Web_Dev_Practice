@@ -147,6 +147,10 @@ if(newray[0]==newray[2] || newray[2]==newray[6]){
 
 }
 
+let isCorrect = false;
+
+isCorrect ? console.log('Correct!') : console.log('Incorrect!');
+
 let i=0;
  while(i<5){
    //console.log("number is " + i);

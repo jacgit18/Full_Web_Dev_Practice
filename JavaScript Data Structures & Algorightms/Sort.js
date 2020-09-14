@@ -1,26 +1,59 @@
-let mixedCaseAnimals = [
-    'Cat', 'dog', 'Elephant', 'bee', 'ant'
-];
+class myshoplist{
+    constructor(){
+       
+    }
+        saylist() {
+            let mixedCaseAnimals = [
+                'Cat', 'dog', 'Elephant', 'bee', 'ant'
+            ];
+            
+            mixedCaseAnimals.sort(function (a, b) {
+                let x = a.toUpperCase(),
+                    y = b.toUpperCase();
+                return x == y ? 0 : x > y ? 1 : -1;
+                // JavaScript ternary operator '?' means boolean true : false
+            });
+            
+            console.log(mixedCaseAnimals);
+            
+            
+            let rivers = ['Nile', 'Amazon', 'Congo', 'Mississippi', 'Rio-Grande'];
+            
+            rivers.sort(function (a, b) {
+                console.log(a, b);
+                return a.length - b.length;
+            });
+            
+            
+            console.log(rivers);
+            
+            
+            console.log(`this is my first param ${this.mystuff}  and second param ${this.myk}`);
+        }
+    
+    }
+    
+    //const mycon = new myshoplist(["hell","no" ], 3);
+    //console.log(mycon);
+    //inheritance
+    
+    class myshoplist2 extends myshoplist{
+        constructor(){
+            super (mystuff, myk); // bind things from other class
+         
+        }
+        
+    }
+    const mycon2 = new myshoplist2();
+    console.log(mycon2);
+    mycon2.saylist();
 
-mixedCaseAnimals.sort(function (a, b) {
-    let x = a.toUpperCase(),
-        y = b.toUpperCase();
-    return x == y ? 0 : x > y ? 1 : -1;
+    let isCorrect = false;
 
-});
-
-console.log(mixedCaseAnimals);
+    isCorrect ? console.log('Correct!') : console.log('Incorrect!');
+        
 
 
-let rivers = ['Nile', 'Amazon', 'Congo', 'Mississippi', 'Rio-Grande'];
-
-rivers.sort(function (a, b) {
-    console.log(a, b);
-    return a.length - b.length;
-});
-
-
-console.log(rivers);
 
 
 
