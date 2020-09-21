@@ -33,13 +33,13 @@ class myshoplist{
     
     }
     
-    //const mycon = new myshoplist(["hell","no" ], 3);
-    //console.log(mycon);
+    const mycon = new myshoplist();
+    console.log(mycon);
     //inheritance
     
     class myshoplist2 extends myshoplist{
         constructor(){
-            super (mystuff, myk); // bind things from other class
+            super (); // bind things from other class
          
         }
         
@@ -48,19 +48,39 @@ class myshoplist{
     console.log(mycon2);
     mycon2.saylist();
 
-    let isCorrect = false;
 
-    isCorrect ? console.log('Correct!') : console.log('Incorrect!');
         
+    class thesorter{
+        constructor(){
+           
+        }
+            saylist() {
+                let myray = ['r', 'a', 'n', 'd' ];
+                console.log(myray);
+                console.log(myray.reverse()); // only available for arrays
+
+
+            }
 
 
 
 
+            
+        
+        }
 
-let myray = ['r', 'a', 'n', 'd' ];
-console.log(myray);
+        const mycon3 = new thesorter();
+        console.log(mycon3);
 
-console.log(myray.reverse()); // only available for arrays
+
+        const hellno = () => { 
+            return console.log(new_student.subjects_required[2]);
+         } // return is automatic
+        // this noname function where using a variable as to refer to it
+        hellno();
+        
+        const product = (a, b) => a + b; // one line function
+
 
 function revString1(str){
     let strArr = str.split(""); // turn string to an array 
@@ -90,6 +110,5 @@ function revString3(str){
 console.log(revString3("hell"));
 
 console.log("hell");
-
 
 
