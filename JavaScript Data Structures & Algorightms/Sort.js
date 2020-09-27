@@ -72,12 +72,12 @@ class myshoplist{
         const mycon3 = new thesorter();
         console.log(mycon3);
 
-
-        const hellno = () => { 
-            return console.log(new_student.subjects_required[2]);
-         } // return is automatic
-        // this noname function where using a variable as to refer to it
-        hellno();
+        
+        // const hellno = () => { 
+        //     return console.log(new_student.subjects_required[2]);
+        //  } // return is automatic
+        // // this noname function where using a variable as to refer to it
+        // hellno();
         
         const product = (a, b) => a + b; // one line function
 
@@ -120,23 +120,23 @@ console.log("hell");
  otherwise, it will call itself indefinitely. So a recursive 
  function typically looks like the following:
 */
-function countDown2(fromNumber) {
-    console.log(fromNumber);
-    countDown2(fromNumber-1);
-}
+// function countDown2(fromNumbers) {
+//     console.log(fromNumbers);
+//     countDown2(fromNumbers-1);
+// }
 
-countDown2(3);
+// countDown2(3);
 
 // recursive function arent used for performancee there isnt necessarly 
 // a performance benefit in fact iterative might hay have more benefits
 // depending on the situation
 
 
-let newYearCountDowns = countDowns;
-// somewhere in the code
-countDowns = null;
-// the following function call will cause an error
-newYearCountDown(10);
+// let newYearCountDowns = countDowns;
+// // somewhere in the code
+// countDowns = null;
+// // the following function call will cause an error
+// newYearCountDown(10);
 
 // To fix it, you can use a named function expression as follows:
 
