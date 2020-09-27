@@ -96,6 +96,7 @@ function revString2(str){
 }
 
 // try building logic of available javascript methods
+// iterative function
 function revString3(str){
     let final = "";
     for (let i =str.length - 1; i >= 0; i--){
@@ -110,5 +111,48 @@ function revString3(str){
 console.log(revString3("hell"));
 
 console.log("hell");
+
+
+/*
+ A recursive function is a function that calls itself until it 
+ doesn’t. And this technique is called recursion. A recursive 
+ function always has a condition to stop calling itself, 
+ otherwise, it will call itself indefinitely. So a recursive 
+ function typically looks like the following:
+*/
+function countDown2(fromNumber) {
+    console.log(fromNumber);
+    countDown2(fromNumber-1);
+}
+
+countDown2(3);
+
+// recursive function arent used for performancee there isnt necessarly 
+// a performance benefit in fact iterative might hay have more benefits
+// depending on the situation
+
+
+let newYearCountDowns = countDowns;
+// somewhere in the code
+countDowns = null;
+// the following function call will cause an error
+newYearCountDown(10);
+
+// To fix it, you can use a named function expression as follows:
+
+let countDown = function f(fromNumber) {
+    console.log(fromNumber);
+
+    let nextNumber = fromNumber - 1;
+
+    if (nextNumber > 0) {
+        f(nextNumber);
+    }
+}
+
+let newYearCountDown = countDown;
+countDown = null;
+newYearCountDown(10);
+
 
 
